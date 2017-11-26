@@ -43,8 +43,8 @@ Based on the predictions of the traffic vechiles, one of the three states is swi
 
 #### States
 
-KL - If there is traffic in the adjacent lanes whose S value is less than 25m away from the S value of the ego vehicle, the ego vehicle stays in its current lane and follows the vehicle in the front by changing its speed to match the speed of the traffic vehicle ahead of it.
-LCL, LCR - If there is no traffic in the adjacent lanes whose S value is less than 25m away from the S value of the ego vehicle, the ego vehicle will try to change lane which has the most free space. The Ego vehilce will try to maintain velocity close to speed limit.
++ KL - If there is traffic in the adjacent lanes whose S value is less than 25m away from the S value of the ego vehicle, the ego vehicle stays in its current lane and follows the vehicle in the front by changing its speed to match the speed of the traffic vehicle ahead of it.
++ LCL, LCR - If there is no traffic in the adjacent lanes whose S value is less than 25m away from the S value of the ego vehicle, the ego vehicle will try to change lane which has the most free space. The Ego vehilce will try to maintain velocity close to speed limit.
 
 #### Trajectory generator
 Spline library is used to generate trajectories in such a way that the maximum jerk and acceleration are never exceeded. The implementation of the trajectory generator is similar to the one explained in the class. Points are picked from the intended path and spline library is used to interpolate these points. The interpolation obrained from the spline library is carefully samplled in such a way that the maximum jerk and acceleration is never exceeded.
